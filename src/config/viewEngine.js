@@ -5,7 +5,6 @@ const configViewEngine = (app) => {
     // Config template engine
     app.set('views', path.join('./src', 'views'));
     app.set('view engine', 'ejs');
-
     // Config static files
     app.use(express.static(path.join('./src', 'public')))
 }
